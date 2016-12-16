@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.photos.photosdemo.ImageDetail.viewpager.HackyViewPager
+        android:id="@+id/image_detail_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="10dp"
+        android:background="@android:color/transparent">
+        <TextView
+            android:id="@+id/image_detail_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:text="@string/viewpager_indicator"
+            android:background="@android:color/transparent" />
+
+        <TextView
+            android:id="@+id/image_detail_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:text="下载"
+            android:background="@android:color/transparent" />
+    </RelativeLayout>
+
+
+
+</FrameLayout>
